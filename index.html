@@ -18,38 +18,24 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Sign Up</title>
+    <title>MySocial. Sign Up for Beta Test</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">Chillspace</div>
+      <div class="logo">MySoci.al</div>
     </header>
     <main class="main">
       <div class="container">
         <form class="form">
-          <section class="form__header">Sign up</section>
-          <section class="form__subhead">
-            Already Have An Account? <a href="./login">Log in</a>
-          </section>
+          <section class="form__header">MySoci.al</section>
           <section>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="First name"
-              required
-            />
+            <p>Highlight your best social media content in one page.</p>
           </section>
-          <section>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last name"
-              required
-            />
+          <section class="form__optin_text">
+            Send me a Twitter DM to sign up for updates and beta testing
           </section>
-          <section>
+
+          <!-- <section>
             <input
               type="email"
               name="email"
@@ -58,44 +44,51 @@
               autocomplete="email"
               required
             />
-          </section>
-          <section>
-            <input
-              type="password"
-              name="password"
-              id="new-password"
-              placeholder="Password"
-              autocomplete="new-password"
-            />
-            <button type="button" class="form__toggle_password">
-              <i class="fas fa-eye-slash fa-lg"></i> SHOW
-            </button>
-          </section>
-          <section>
+          </section> -->
+
+          <!-- <section>
             <div class="form__optin_title">
               Want to stay up to date on the latest?
             </div>
             <div class="form__optin_text">
               Join our email list and be the first to know about special offers.
             </div>
-          </section>
+          </section> -->
           <section>
-            <button type="submit" class="form__submit">
-              Create an Account
+            <button type="button" class="form__submit">
+              <i class="fab fa-twitter fa-lg"></i> Send Twitter DM
             </button>
           </section>
           <section>
             <div class="form__footer">
-              By continuing, you agree to Chillspace's
+              I will only contact you about the development of this app from my
+              Twitter handle
+              <a href="https://twitter.com/tamalweb">@tamalweb</a>
+              <!-- By continuing, you agree to Chillspace's
               <a href="#">Terms & Conditions</a> and
-              <a href="#">Privacy Policy</a>
+              <a href="#">Privacy Policy</a> -->
             </div>
           </section>
         </form>
       </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div>&copy; 2021 Chillspace Inc.</div>
-    </footer>
+    </footer> -->
+
+    <script type="text/javascript">
+      document.querySelector(".form__submit").onclick = function () {
+        const demoText = "hello";
+        const text =
+          "Hey%20Tamal,%20please%20notify%20me%20when%20you%20are%20beta%20testing%20your%20app!";
+        const link =
+          "https://twitter.com/messages/compose?recipient_id=1165509891504525313&text=";
+
+        const oldLink =
+          "https://twitter.com/messages/1165509891504525313-1165509891504525313?recipient_id=1165509891504525313&text=";
+
+        location.href = link + text;
+      };
+    </script>
   </body>
 </html>
