@@ -4,103 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>MySocial. Sign Up for Beta Test</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-KQMV2C4CRT"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-KQMV2C4CRT");
-    </script>
+    <meta name="theme-color" content="#ab07cd" />
+    <title>MySoci.al</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">My Social</div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <form class="form">
-          <section class="form__header">My Social</section>
-          <section>
-            <p>Highlight your best social media content in one page.</p>
-          </section>
-          <section class="form__optin_text">
-            Send me a Twitter DM to sign up for updates and beta testing
-          </section>
+    <div class="app">
+      <header class="logo">
+        <a href="/">
+          <img src="./img/logo.png" width="200" height="auto" alt="" />
+        </a>
+      </header>
+      <main class="main">
+        <h1 class="title">Create a Mini Website with All Your Social Links</h1>
+      </main>
+      <!-- <section>
+        <div class="link">mysoci.al/yourname</div>
+      </section> -->
 
-          <!-- <section>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              autocomplete="email"
-              required
-            />
-          </section> -->
-
-          <!-- <section>
-            <div class="form__optin_title">
-              Want to stay up to date on the latest?
-            </div>
-            <div class="form__optin_text">
-              Join our email list and be the first to know about special offers.
-            </div>
-          </section> -->
-          <section>
-            <button type="button" class="form__submit">
-              <i class="fab fa-twitter fa-lg"></i> Send Twitter DM
-            </button>
-          </section>
-          <section>
-            <div class="form__footer">
-              I will only contact you about the development of this app from my
-              Twitter handle
-              <a href="https://twitter.com/tamalweb">@tamalweb</a>
-              <!-- By continuing, you agree to Chillspace's
-              <a href="#">Terms & Conditions</a> and
-              <a href="#">Privacy Policy</a> -->
-            </div>
-          </section>
-        </form>
-      </div>
-    </main>
-    <!-- <footer class="footer">
-      <div>&copy; 2021 Chillspace Inc.</div>
-    </footer> -->
-
+      <section>
+        <button class="button hero_button">Get an Invite</button>
+      </section>
+    </div>
     <script type="text/javascript">
-      document.querySelector(".form__submit").onclick = function () {
-        const demoText = "hello";
+      document.querySelector(".button").onclick = function () {
         const text =
-          "Hey%20Tamal,%20please%20notify%20me%20when%20you%20are%20beta%20testing%20your%20app!";
+          "Hey%20Tamal,%20can%20you%20invite%20me%20to%20MySocial?%20Thanks";
         const link =
           "https://twitter.com/messages/compose?recipient_id=1165509891504525313&text=";
-
-        const oldLink =
-          "https://twitter.com/messages/1165509891504525313-1165509891504525313?recipient_id=1165509891504525313&text=";
-
         location.href = link + text;
       };
     </script>

@@ -1,0 +1,75 @@
+:root {
+  --color-primary: #00a8ff;
+  --color-secondary: #fffb96;
+  /* --color-background: #b967ff; */
+  --color-background: #b967ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* min-height: 100vh; */
+  font-size: 100%;
+}
+
+body {
+  min-height: inherit;
+  font-family: Helvetica, sans-serif;
+  background-color: var(--color-background);
+  background: url(./img/bg.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 600px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.button {
+  background-color: var(--color-secondary);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 16px 40px;
+}
+
+.button.hero_button {
+  font-size: 1.5rem;
+  padding: 16px 60px;
+}
+
+.button.google_button {
+  background-color: black;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 100%;
+  }
+
+  .button {
+    width: 90%;
+  }
+}
