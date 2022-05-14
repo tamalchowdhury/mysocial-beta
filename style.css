@@ -20,7 +20,7 @@ body {
   min-height: inherit;
   font-family: Helvetica, sans-serif;
   background-color: var(--color-background);
-  background: url(./img/bg.svg);
+  background-image: url(./img/bg.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
